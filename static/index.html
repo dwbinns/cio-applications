@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CIO Application 2024</title>
+    <meta charset="utf-8" />
+    <script src="applications.js"></script>
+    <script src="polyfill.js"></script>
+    <link rel="stylesheet" href="applications.css" />
+</head>
+
+<body>
+
+    <!--<div style='border:2px solid #c77;background:#fcc;padding:20px;margin:20px;font-size:20px'>
+        Applications for 2024 will open soon. <a href='https://cambridgeinternationaloutreach.uk/page4.html'>Contact us
+            here</a>.
+    </div>-->
+
+    <div class='not-safeguarding page'>
+
+
+        <div id='photo'>
+            <label style='font-weight:bold;font-size:85%' class='interactive' id='file-label'>Click to add a photo of
+                yourself
+                <input style='display:none' type='file' style='width:190px' id='photo-file' />
+            </label>
+            <label style='font-weight:bold' id='photo-label'>
+                <input style='display:none' type='text' name='photo' />
+                <div class='loading' style='display:none'>Uploading image...</div>
+                <span class='thumbnail'></span>
+            </label>
+        </div>
+
+        <h1>Cambridge International Outreach 2024</h1>
+
+
+        <div class='interactive' style='float:left;background:#eef;padding:10px;width:200px;margin: 20px;'>
+            <h3>More...</h3>
+            To find out more about what CIO involves, please click <a href='https://cambridgeinternationaloutreach.uk/'
+                target='_blank'>here</a> to help you with your
+            application.
+            <h3>Any questions?</h3>
+            <a href='https://cambridgeinternationaloutreach.uk/page4.html' target='_blank'>Ask the CIO Applications
+                Administrator a
+                Question</a>
+        </div>
+
+
+        <p>Thank you for your interest in Cambridge International Outreach (CIO), a full time activity lasting a full
+            two
+            weeks. Please complete this application form as soon as possible. If everything is satisfactory you will be
+            sent
+            an email confirming your place on the team as well as some further information. </p>
+
+        <p>Deadline for applications is one month before your team starts – if you are not able to make this deadline
+            please
+            email or telephone in advance to make sure there are still spaces. </p>
+
+        <p class='interactive'>This form works in recent Google Chrome, Firefox and Microsoft Edge.</p>
+        <p class='interactive'>The form will be saved if you close your browser and you can resume it later. If you want
+            to
+            start again and clear saved data then press the reset button below.</p>
+
+
+        <pre id='console' style='border:1px solid red;display:none;'></pre>
+
+
+        <p class='interactive'>
+            <button id='reset'>Reset application form</button>
+        </p>
+        <input name='started' id='started' style='display:none' /><input name='finished' id='finished'
+            style='display:none' />
+
+        <p style='clear:both'>
+        </p>
+
+
+        <p class='any'>
+            <label>
+                I completely agree with the <a href='https://www.friendsinternational.uk/policies/statement-of-faith'
+                    target='_blank'>statement of faith</a>
+                and am committed to follow the <a href='https://cambridgeinternationaloutreach.uk/page2.html'
+                    target='_blank'>team
+                    principles</a>
+                <input type='checkbox' name='statement-of-faith' value='agree' />
+            </label>
+        </p>
+
+        <p class='any'>
+            <label>
+                I have read the <a href='GeneralInformationSheet-CIO-2024.pdf' target='_blank'>general information sheet
+                    (.pdf)</a>
+                <input type='checkbox' name='general-information' value='agree' />
+            </label>
+        </p>
+
+        <p class='any'>
+            <label>
+                I understand that Friends International (Registered Charity 1094095) will keep a digital record of my
+                details for maximum 5 years and will share them with the leaders of the team I have applied to
+                <input type='checkbox' name='data-protection' value='agree' />
+            </label>
+        </p>
+        <p class='any'>
+            <label>
+                I understand that if I don’t arrange my own travel insurance, Friends International will not be
+                responsible
+                for my care or costs in the case of any problems.
+                See here for advice on <a
+                    href='https://www.citizensadvice.org.uk/health/help-with-health-costs/nhs-charges-for-people-from-abroad/'
+                    target='_blank'>NHS charges</a>
+                <input type='checkbox' name='insurance' value='agree' />
+            </label>
+        </p>
+        <p class='any'>
+            <label>I am able to serve full time for two full weeks <input type='checkbox' name='fulltime'
+                    value='y' /></label>
+        </p>
+
+
+        <h2 style='clear:both'>
+            Which team?
+        </h2>
+
+        <div class='columns'>
+
+            <div class='left'>
+
+                <div class='any'>
+                    <p><label>Team 1: July 14th - July 28th<input type='checkbox' name='team1' value='team1' /></label>
+                    </p>
+                    <p><label>Team 2: July 28th - August 11th<input type='checkbox' name='team2'
+                                value='team2' /></label>
+                    </p>
+                    <p><label>Team 3: August 11th - August 25th<input type='checkbox' name='team3'
+                                value='team3' /></label></p>
+                </div>
+
+                <p><label class='optional'>Please indicate if you could do a different team instead:
+                        <textarea name='different-teams'></textarea></label></p>
+
+            </div>
+            <div class='right'>
+
+                <p>
+                    Most team members come for just one team but if you can come for two teams it provides continuity to
+                    the ministry:
+                    we welcome this and give a discount!
+                    If you want to come for more than 2 teams please get in touch and we will discuss this with you.
+                    <br />
+                    All teams start and finish on a Sunday, and there is a day off each week.
+                    <br />
+                    If you wish to arrive early or stay later you must find your own accommodation.
+                    <br />
+                    We only accept members for the full team dates.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p><label class='optional'>If you have applied for any other summer teams in the UK, please let us know which
+                ones
+                and the dates:
+                <textarea name='other-teams'></textarea></label></p>
+
+
+        <h2>About you</h2>
+
+        <table>
+            <tr>
+                <td>
+                    <p><label>Full name<input type='text' name='full-name' /></label></p>
+                </td>
+                <td>
+                    <p><label>Name you are known by<input type='text' name='known-by' /></label></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><label>Age<input type='text' name='age' /></label></p>
+                </td>
+                <td>
+                    <p><label>Nationality<input type='text' name='nationality' /></label></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><label>Sex <select name='sex'>
+                                <option value=''>choose:</option>
+                                <option value='male'>Male</option>
+                                <option value='female'>Female</option>
+                            </select></label></p>
+                    <p><label>Are you married? <select name='married'>
+                                <option value=''>choose:</option>
+                                <option value='y'>Yes</option>
+                                <option value='n'>No</option>
+                            </select></label></p>
+                    <p><label data-if='y'>If yes, will your spouse be on the team? <select name='partnerteam'>
+                                <option value=''>choose:</option>
+                                <option value='y'>Yes</option>
+                                <option value='n'>No</option>
+                            </select></label></p>
+                    <p><label data-if='y'>If yes, what is your spouse's name?<input type='text'
+                                name='partnername' /></label></p>
+                </td>
+                <td>
+                    <p><label>Are you applying together with your boyfriend/girlfriend?<select name='friend'>
+                                <option value=''>choose:</option>
+                                <option value='y'>Yes</option>
+                                <option value='n'>No</option>
+                            </select></label></p>
+                    <p><label data-if='y'>If yes, please tell us their name<input type='text'
+                                name='friendname' /></label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><label>Mobile phone number*<input type='text' name='mobile' /></label></p>
+                    <p>*We may arrange to speak with you if we need any more information.</p>
+                </td>
+                <td>
+
+                    <p><label>Email address<input type='text' name='email' /><br /></label></p>
+                    <p style='color:#f00;font-weight:bold'>Please ensure your email address is correct as this is how we
+                        will contact you. You will receive confirmation to this address.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><label>Have you been on a Cambridge International Outreach team before? <select name='previous'>
+                                <option value=''>choose:</option>
+                                <option value='y'>Yes</option>
+                                <option value='n'>No</option>
+                            </select></label></p>
+                    <p><label data-if='y'>If yes, on which dates?<textarea name='previousdates'></textarea></label></p>
+                </td>
+                <td>
+                    <p><label class='optional'>Name of college/university (if in higher education)<input type='text'
+                                name='university' /></label>
+                    </p>
+                    <p><label>Are you a member of CICCU/UCCF/IFES/GBU or similar organisation?
+                            <textarea name='ifes'></textarea>
+                        </label></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><label>How did you hear about Cambridge International Outreach?
+                            <textarea name='hear'></textarea></label></p>
+                </td>
+                <td>
+                    <p><label>Which church(es) do you attend? 
+                            <textarea name='church'></textarea></label>
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Emergency contact</h2>
+        <p>
+            Contact details for someone we can contact in an emergency when you are on the team:
+        </p>
+        <div class='columns'>
+
+            <div class='left'>
+                <p>
+                    <label>Name:
+                        <input type='text' name='emergency-name' />
+                    </label>
+                    <label>Phone:
+                        <input type='text' name='emergency-phone' />
+                    </label>
+                </p>
+            </div>
+            <div class='right'>
+                <p>
+                    <label>Email:
+                        <input type='text' name='emergency-email' />
+                    </label>
+                    <label>Relationship to you:
+                        <input type='text' name='emergency-relationship' />
+                    </label>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class='not-safeguarding page'>
+
+        <h2>Christian life</h2>
+
+        <h3>Please give brief answers to the following questions:</h3>
+        <p><label>When, where and how did you become a Christian?
+                <textarea name='christian' recommended='50-100'></textarea></label></p>
+
+
+        <p><label>What difference does Christ make in your life? (Tell us about how being a Christian has affected your
+                life, including in work/education and relationships with friends and family).
+                <textarea name='change' recommended='50-100'></textarea></label></p>
+
+
+        <p><label>Please tell us why you want to join this summer team.
+                <textarea name='why' recommended='50-100'></textarea></label></p>
+
+
+        <p><label>The gospel is good news. In a few sentences, how would you summarise the gospel message to someone
+                from
+                another culture in simple English?
+                <textarea name='gospel' recommended='50-100'></textarea></label></p>
+
+        <p><label>How have you been involved in evangelism in the past?
+                <textarea name='evangelism' recommended='50-100'></textarea></label></p>
+
+
+        <p><label>What experiences have you had with people from other cultures?
+                <textarea name='crossCultural' recommended='50-100'></textarea></label></p>
+
+
+        <h3>How would you respond if an international visitor said to you:</h3>
+        <p>
+            <label>a. ‘I have lived a good life. I think that will help God to accept me when I die.’
+                <textarea name='answerAccept' recommended='50-100'></textarea></label>
+        </p>
+
+
+        <p><label>b. ‘How can you trust what the Bible says?’
+                <textarea name='answerBible' recommended='50-100'></textarea></label></p>
+
+
+        <p><label>c. ‘I believe all religions are equally valid. It doesn’t matter which religion you are, provided you
+                are
+                sincere.’
+                <textarea name='answerReligions' recommended='50-100'></textarea></label></p>
+
+
+    </div>
+    <div class='not-safeguarding page'>
+        <h2>Gifts and experience</h2>
+        <p>
+            Are you interested in doing any of the following jobs?
+        </p>
+        <p><label><input name='music' type='checkbox' />Music Coordinator (helping organise the music for the morning
+                team
+                sessions)</label></p>
+        <p><label><input name='nurse' type='checkbox' />Team nurse</label></p>
+        <p><label><input name='assistant' type='checkbox' />Caterer’s assistant</label></p>
+        <p><label data-if='y'><input name='caterer-emergency' type='checkbox' />are you willing to be team caterer in an
+                emergency?</label></p>
+        <p><label><input name='treasurer' type='checkbox' />Team treasurer </label></p>
+        <p><label><input name='bike' type='checkbox' />Bicycle repairer </label></p>
+        <p><label><input name='sports' type='checkbox' />Leading sports activities</label></p>
+        <p><label><input name='english' type='checkbox' />Teaching English</label></p>
+        <p><label><input name='tech' type='checkbox' />Computer/Tech helper (helping with computer and projection needs
+                during training and café sessions)</label></p>
+        <p><label><input name='social' type='checkbox' />Social Media Co-ordinator (helping people engage with our
+                events
+                through facebook, Instagram etc)</label></p>
+
+
+        <p><label class="optional">What other gifts do you think you have that could contribute to the team’s outreach?
+                <textarea name='gifts'></textarea></label></p>
+
+        <div class='columns'>
+
+            <div class='left'>
+
+                <p><label><input name='instrument' type='checkbox' value='y' />I will bring a musical instrument</label>
+                </p>
+                <p><label data-if='y'>if yes, what:<input name='what-instrument' type='text' /></label></p>
+                <p><label><input name='bicycle' type='checkbox' />I will bring my own bicycle</label></p>
+                <p><label><input name='car' type='checkbox' />I will bring my own car</label></p>
+                <p><label><input name='accommodation' type='checkbox' />I will find my own accommodation*</label></p>
+                <p><label data-if='y'>if yes, what will be your address in Cambridge?<input name='accommodation-address'
+                            type='text' /></label></p>
+                <p>*Very helpful indeed if you can, but we can provide it if you can’t</p>
+
+                <p>
+                    <label>
+                        <select name='can-ride' class="wide">
+                            <option value=''>choose:</option>
+                            <option value='no'>not ride a bike</option>
+                            <option value='yes'>ride a bike but am not confident</option>
+                            <option value='confident'>ride confidently for 20-25 minutes</option>
+                        </select>
+                        Cycling: I can...
+                    </label>
+                </p>
+            </div>
+
+            <div class='right any'>
+
+                <p>Fluency in spoken English is needed to participate in a Team; you need to understand the seminars and
+                    Bible teaching and help other people to practise English!</p>
+
+                <p><label><input name='english-native' type='checkbox' />I can speak fluent English/I am a native
+                        speaker
+                    </label></p>
+                <p><label><input name='english-toefl-550' type='checkbox' />I have at least 550 points in TOEFL
+                        qualification</label>
+                </p>
+                <p><label><input name='english-ielts-6' type='checkbox' />I have at least 6 in an IELTS
+                        listening/speaking
+                        qualification</label></p>
+                <p><label><input name='english-other' type='checkbox' />Other*</label></p>
+
+
+                <p><label data-if='yes'>* Please describe your English level:
+                        <textarea name='english-level'></textarea></label></p>
+
+
+                <p><label class='optional'>Other languages spoken (please state your level):
+                        <textarea name='languages'></textarea></label></p>
+
+            </div>
+        </div>
+
+
+        <p><label class='optional'>
+                Is there anything we need to know to help support you e.g. any disability, pastoral concern or other,
+                for which
+                you might need us to make adjustments? <br />
+                For example: any allergies, fear of animals, regular medication, dietary requirements (e.g. vegetarian)
+                <textarea name='allergies'></textarea></label></p>
+
+
+        <h2>Supporting Friends International</h2>
+        <p>
+            The fees are: £150 for one team or £175 for two teams.
+            (for returning team members the total fee is reduced by £50)
+        </p>
+
+        <p>
+            <label>
+                Are you able to pay full fees? (Fees are collected on arrival)
+                <select name='fees'>
+                    <option value=''>choose:</option>
+                    <option value='y'>Yes</option>
+                    <option value='n'>No</option>
+                </select>
+            </label>
+        </p>
+
+
+        <p>
+            <label>
+                Are you happy for photos of yourself taken during the outreach to be used for publicity?
+                <select name='photo-consent' class="wide">
+                    <option value=''>choose:</option>
+                    <option value='y'>I give consent</option>
+                    <option value='n'>I do not give consent</option>
+                </select>
+            </label>
+        </p>
+
+        <p><label>I would like to receive monthly news about opportunities and issues regarding cross-cultural ministry
+                from
+                Friends International:
+                <select name='news'>
+                    <option value=''>choose:</option>
+                    <option value='y'>Yes</option>
+                    <option value='n'>No</option>
+                </select>
+            </label></p>
+
+
+    </div>
+    <div class='safeguarding'>
+        <h2>Cambridge International Outreach child protection self-declaration form</h2>
+
+        <p class='interactive'>N.B. You will need to sign it on arrival.</p>
+        <p>(You are required to give us this information in order for us to keep British guidelines on child protection
+            issues as team members are likely to have some contact with students under the age of 18)</p>
+
+
+        <table>
+            <tr>
+                <td>
+                    <p><label>Full name<input type='text' name='full-name' /></label></p>
+                </td>
+                <td rowspan="2">
+                    <p><label>Contact address<textarea name='address'></textarea></label></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><label>Sex: <select name='sex'>
+                                <option value=''>choose:</option>
+                                <option value='male'>Male</option>
+                                <option value='female'>Female</option>
+                            </select></label></p>
+                </td>
+            </tr>
+        </table>
+        <p><label>Date of Birth: <input type='text' name='date-of-birth' /></label></p>
+
+
+        <p><label>Have you ever been convicted of any criminal offence? <select name='offence'>
+                    <option value=''>choose:</option>
+                    <option value='y'>Yes</option>
+                    <option value='n'>No</option>
+                </select></label></p>
+
+        <p><label data-if='y'>If yes, please supply details of any criminal convictions
+                <textarea name='convictions'></textarea>
+            </label></p>
+
+
+        <p>Note: You are advised that under the provisions of the Rehabilitation of Offenders Act 1974 (Exceptions)
+            order
+            1975 as amended by the Rehabilitation of Offenders Act 1974 (Exceptions) (Amendment) Order 1986 you should
+            declare all convictions including “spent” convictions.</p>
+
+        <p><label>Are you a person known to any Social Services department as being an actual or potential risk to
+                children?<select name='risk'>
+                    <option value=''>choose:</option>
+                    <option value='y'>Yes</option>
+                    <option value='n'>No</option>
+                </select></label></p>
+
+        <p><label data-if='y'>If yes, please supply details
+                <textarea name='risks'></textarea>
+            </label></p>
+
+
+        <p><label>Have you had any disciplinary sanction relating to child abuse? <select name='sanctions'>
+                    <option value=''>choose:</option>
+                    <option value='y'>Yes</option>
+                    <option value='n'>No</option>
+                </select></label></p>
+
+        <p><label data-if='y'>If yes, please supply details
+                <textarea name='disciplinary'></textarea>
+            </label></p>
+
+
+        <div class='columns non_interactive'>
+            <div class='left'>
+                <p>Signed by the above named person</p>
+                <p class='signing non_interactive'>
+                </p>
+
+            </div>
+            <div class='right'>
+                <p>Date</p>
+                <p class='signing non_interactive'>
+                </p>
+            </div>
+        </div>
+
+
+        <h2>References</h2>
+
+        <h3>Referee 1</h3>
+        <p style="background:#eef;padding:10px;margin: 20px;">
+            This should be a Christian who knows you such as church leader or IFES / UCCF staff or similar. If possible,
+            please choose someone who knows you in the context of working with children and young people.
+        </p>
+
+        <p>
+            <label>
+                I have known this person for more than 2 years
+                <select name='ref1-known'>
+                    <option value=''>choose:</option>
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                </select>
+            </label>
+        </p>
+
+        <p><label data-if='no'>
+                If no, please explain (briefly) why you can't provide someone who's known you for more than two years.
+                <textarea name='ref1-whynot'>
+
+        </textarea>
+        </p>
+
+        <table>
+            <tr>
+                <td>
+                    <p><label>Name <input name='ref1-name' type='text' /></label></p>
+                </td>
+                <td>
+                    <p><label>Job Title/relationship to you <textarea class='inline' name='ref1-title'
+                                type='text'></textarea></label></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><label>Email <input name='ref1-email' type='text' /></label></p>
+                </td>
+                <td>
+                    <p><label class='optional'>Telephone Number <input name='ref1-phone' type='text' /></label></p>
+                </td>
+            </tr>
+        </table>
+
+        <p><label class='optional'>Contact Address (only if no email given)<input name='ref1-address'
+                    type='text' /></label>
+        </p>
+
+
+
+
+        <h3>Referee 2</h3>
+        <p style="background:#eef;padding:10px;margin: 20px;">
+            This should be any person who has known you well for 2 years (e.g. teacher, school/church friend etc but not
+            a member of your family).
+        </p>
+
+        <p>Please inform this person of your application to the Cambridge International Outreach team. (It is not always
+            necessary for us to contact this person.)
+
+        <table>
+            <tr>
+                <td>
+                    <p><label>Name <input name='ref2-name' type='text' /></label></p>
+                </td>
+                <td>
+                    <p><label>Job Title/relationship to you <textarea class='inline' name='ref2-title'
+                                type='text'></textarea></label></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><label>Email <input name='ref2-email' type='text' /></label></p>
+                </td>
+                <td>
+                    <p><label class='optional'>Telephone Number <input name='ref2-phone' type='text' /></label></p>
+                </td>
+            </tr>
+        </table>
+
+        <p><label class='optional'>Contact Address (only if no email given)<input name='ref2-address'
+                    type='text' /></label>
+        </p>
+
+        <p>
+            <label>Is this person a Christian?
+                <select name='ref2-christian'>
+                    <option value=''>choose:</option>
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                </select>
+        </p>
+
+
+        <div class='incomplete interactive'>
+            <p style='background: #ffcccc;border: 2px solid #ff7777;'>This form is not yet complete. Please find all
+                sections highlighted in red and complete them.</p>
+            <p>Sections which need completing: (click to highlight)</p>
+            <p class='remaining'></p>
+        </div>
+
+        <p class='interactive'>
+            <button id='save'>Submit application</button>
+        </p>
+        <p id='saving' style='display:none'>
+            Form is now submitting. Do not close this page until this has finished.
+        </p>
+        <div class='status'></div>
+    </div>
+
+</body>
+
+</html>

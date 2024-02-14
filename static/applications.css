@@ -1,0 +1,278 @@
+/*@font-face {
+      font-family: "Comfortaa_Thin";
+      src: url("Comfortaa_Thin.woff");
+}
+
+@font-face {
+      font-family: "Amaranth-Regular";
+      src: url("Amaranth-Regular.woff");
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width:1000px;
+    font-family:sans-serif;
+    margin:50px auto;
+    font-size:14px;
+    background: #faf4ef;
+}
+
+@media print {
+    body {
+        zoom: 0.8;
+        margin: 10mm;
+    }
+}
+
+#photo {
+    float:right;
+    width:220px;
+}
+
+#photo input {
+    /*display:none;*/
+}
+
+#photo .thumbnail,#photo .loading {
+    display:block;
+    height:220px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+textarea,input {
+    border-style: solid;
+    border-color:#ccf;
+    margin:0;
+    border-width:2px;
+}
+
+.popup {
+    position: absolute;
+    right: 0px;
+    bottom: -6px;
+    height: 12px;
+    font-size: 10px;
+    border-color: inherit;
+    background: inherit;
+    border-width: 0px;
+    border-style: solid;
+    border-top: none;
+    display:none;
+    z-index:1;
+    padding:0 5px;
+}
+
+p {
+    /*overflow:auto;*/
+    margin:0;
+    padding:5px 10px;
+}
+
+p label {
+    display: block;
+    margin:-3px;
+    padding:2px 10px;
+}
+
+
+div.columns {
+    /*overflow:auto;*/
+    padding:10px;
+    /*border:2px solid #eee;*/
+}
+
+div.columns:after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;clear: both;
+}
+
+
+div.left {
+    float:left;
+    width:50%;
+    position:relative;
+}
+
+div.right {
+    float:right;
+    width:50%;
+    position:relative;
+}
+
+.page {
+    break-after:always;
+    page-break-after:always;
+}
+
+p.signing {
+height:10em;
+border:5px solid #ccf;
+}
+
+
+table {
+    border-collapse:collapse;
+    width:100%;
+    font-size:100%;
+}
+
+td {
+    /*border:2px solid #eee;*/
+    width:50%;
+}
+
+table p input, div.right p input, div.left p input, tr td textarea.inline {
+    width: 250px;
+}
+
+select {
+    width: 100px;
+}
+
+select.wide {
+    width: 250px;
+}
+
+
+html body input[type='checkbox'] {
+    width: 50px;
+}
+
+
+html body label {
+    transition:background 0.5s,outline-color 0.5s;
+    display:block;
+}
+
+.remaining div {
+    color:#ff7777;
+    cursor:pointer;
+}
+
+
+html body label.highlight {
+    background: #ffff00;
+    outline: 2px solid #ffff00;
+
+}
+
+.toolong {
+    background: #ffcc00;
+    border-color:#ff7700
+}
+
+body.safeguarding .not-safeguarding {
+  display:none;
+}
+
+body.general .safeguarding {
+    display:none;
+}
+
+body.interactive_on div.any,body.interactive_on label[valid] {
+    /*border: 2px solid #fff;*/
+    padding: 6px 10px;
+}
+
+body.interactive_on div.any,body.interactive_on label[valid='no'] {
+    background: #ffcccc;
+    /*border: 2px solid #ff7777;*/
+    /*display:block;*/
+    /*overflow:auto;*/
+}
+
+label:after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;clear: both;
+}
+
+div.any label[valid] {
+    background:none;
+    border:none;
+}
+
+
+body.interactive_on  div.any[valid='yes'],body.interactive_on label[valid='yes'] {
+    background:#f7fff7;
+    border-color:#dfd;
+}
+
+label.disabled {
+    background:#eee;
+    border-color:#eee;
+    color:#ccc;
+}
+
+label.disabled input, label.disabled textarea {
+    background:#eee;
+    border-color:#eee;
+    color:#ccc;
+}
+
+label.disabled select {
+    color: #ccc;
+    background: #eee;
+}
+
+label {
+  position:relative;
+}
+
+
+input,select {
+    font-size:100%;
+}
+
+p input,p select,p textarea.inline {
+float: right;
+margin-left: 20px;
+}
+
+p input[type='text'] {
+    padding: 2px 10px;
+}
+
+p input[type='checkbox'],p input[type='radio'] {
+/*margin-right: -100px;*/
+margin:3px;
+}
+
+textarea {
+width:100%;
+box-sizing: border-box;
+}
+
+textarea.inline {
+    vertical-align: top;
+}
+
+body.notvalid #save {
+    visibility:hidden;
+}
+
+body.notvalid .incomplete {
+    visibility:visible;
+}
+
+body.valid .incomplete {
+    visibility:hidden;
+}
+
+.interactive {
+    display:none;
+}
+
+body.interactive_on .interactive {
+    display:block;
+}
+
+.non_interactive {
+    display:block;
+}
+
+body.interactive_on .non_interactive {
+    display:none;
+}
